@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Word Prediction Game</title>
+    <link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Word Prediction Game</h1>
+        <div class="letters">
+            <div class="box"><img id="image_s" src="Letters/S.svg"></div>
+            <div class="box"><img id="image_t" src="Letters/T.svg"></div>
+            <div class="box"><img id="image_o" src="Letters/O.svg"></div>
+            <div class="box"><img id="image_c" src="Letters/C.svg"></div>
+            <div class="box"><img id="image_k" src="Letters/K.svg"></div>
+        </div>
+        <div class="word-info-container">
+            <div class="word">
+                <p id="word">Prediction:</p>
+                <input type="text" id="word" oninput="predictWord()">
+            </div>
+            <div class="info">
+                <p id="Score">Score:</p>
+                <div class="lives">
+                    <p id="lives">Lives</p>
+                    <div class="hearts">
+                        <img src="heart.svg" height="20px" width="20px">
+                        <img src="heart.svg" height="20px" width="20px">
+                        <img src="heart.svg" height="20px" width="20px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="submit">Submit</button>
+        <button class="resetButton" onclick="reset()">Reset the Game</button>
+    </div>
+    <script src="game.js"></script>
+</html>
