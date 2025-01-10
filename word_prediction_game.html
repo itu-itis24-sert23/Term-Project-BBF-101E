@@ -15,9 +15,16 @@
             <div class="box"><img id="image_k" src="Letters/K.svg"></div>
         </div>
         <div class="word-info-container">
-            <div class="word">
-                <p id="word">Prediction:</p>
-                <input type="text" id="word" oninput="predictWord()">
+            <div>
+                <div class="word">
+                    <p id="word">Prediction:</p>
+                    <input type="text" id="word" oninput="predictWord()">
+                </div>
+                <div class="buttons">
+                    <button class="submit">Submit</button>
+                    <button class="resetButton" onclick="reset()">Reset the Game</button>
+                </div>
+                
             </div>
             <div class="info">
                 <p id="Score">Score:</p>
@@ -31,8 +38,7 @@
                 </div>
             </div>
         </div>
-        <button class="submit">Submit</button>
-        <button class="resetButton" onclick="reset()">Reset the Game</button>
+        
     </div>
     <script src="game.js"></script>
 </html>
