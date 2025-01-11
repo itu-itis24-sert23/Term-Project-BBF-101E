@@ -1,7 +1,7 @@
   h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    color: red;
+    color: #8f0b13;
   }
 
   body {
@@ -11,12 +11,12 @@
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: #fffbf0;
     text-align: center;
   }
 
   .container {
-    background-color: #fff;
+    background-color: #efdfc5;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
@@ -39,7 +39,6 @@
     transform-style: preserve-3d;
     transform: rotateY(0);
     transition: transform 0.6s;
-    cursor: pointer;
   }
 
   .S .front, .S .back, .T .back, .T .front, .O .back, .O .front, .C .back, .C .front, .K .back, .K .front {
@@ -54,26 +53,20 @@
   }
 
   .S .front, .T .front, .O .front, .C .front, .K .front {
-    background-color: #3498db;
+    background-color: #fffbf0;
     border-radius: 10px;
     border: 1px solid #001524;
     transform: rotateY(180deg);
   }
 
   .S .back, .T .back, .O .back, .C .back, .K .back {
-    background-color: #e74c3c;
+    background-color: #252b2b;
     border-radius: 10px;
     border: 1px solid #001524;
   }
 
   .S.flipped, .T.flipped, .O.flipped, .C.flipped, .K.flipped {
     transform: rotateY(180deg);
-  }
-
-  .letters {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
   }
 
   .word-info-container {
@@ -87,6 +80,7 @@
   .word {
     display: flex;
     flex-direction: column;
+    width: 200px;
   }
 
   .buttons {
@@ -97,19 +91,9 @@
     margin-top: 1rem;
     gap: 8px;
   }
-  /* 
-  #Score {
-    
-  } */
-
-  /* .info {
-    color: #001524;
-    border: 1px solid #001524;
-    border-radius: 5px;
-    padding: 1rem;
-  } */
 
   .lives {
+    background-color: #fff1c9;
     margin-top: 2rem;
     border: 1px solid #001524;
     border-radius: 5px;
@@ -123,18 +107,9 @@
     margin-bottom: 1rem;
   }
 
-  .box {
-    width: 100px;
-    height: 100px;
-    background-color: lightblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #001524;
-  }
 
   #submitButton {
-    background-color: #78290f;
+    background-color: #8f0b13;
     color: white;
     padding: 0.5rem 1rem;
     width: 130px;

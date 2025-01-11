@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Word Prediction Game</title>
     <link rel="stylesheet" type="text/css" href="game.css">
@@ -13,7 +13,7 @@
                    <img src="Letters/S.svg">
                 </div>
                 <div class="back">
-                  <h2>Arka Yüz</h2>
+                    <img src="star.svg" height="80%" width="80%">
                 </div>
             </div>
             <div class="T">
@@ -21,7 +21,7 @@
                    <img src="Letters/T.svg">
                 </div>
                 <div class="back">
-                  <h2>Arka Yüz</h2>
+                    <img src="star.svg" height="80%" width="80%">
                 </div>
             </div>
             <div class="O">
@@ -29,7 +29,7 @@
                    <img src="Letters/O.svg">
                 </div>
                 <div class="back">
-                  <h2>Arka Yüz</h2>
+                    <img src="star.svg" height="80%" width="80%">
                 </div>
             </div>
             <div class="C">
@@ -37,7 +37,7 @@
                    <img src="Letters/C.svg">
                 </div>
                 <div class="back">
-                  <h2>Arka Yüz</h2>
+                    <img src="star.svg" height="80%" width="80%">
                 </div>
             </div>
             <div class="K">
@@ -45,24 +45,15 @@
                    <img src="Letters/K.svg">
                 </div>
                 <div class="back">
-                  <h2>Arka Yüz</h2>
+                    <img src="star.svg" height="80%" width="80%">
                 </div>
             </div>
-        </div>
-            
-        <div class="letters">
-            
-            <div class="box" id="boxs"><img id="image_s" src="Letters/S.svg"></div>
-            <div class="box" id="boxt"><img id="image_t" src="Letters/T.svg"></div>
-            <div class="box" id="boxo"><img id="image_o" src="Letters/O.svg"></div>
-            <div class="box" id="boxc"><img id="image_c" src="Letters/C.svg"></div>
-            <div class="box" id="boxk"><img id="image_k" src="Letters/K.svg"></div>
         </div>
         <div class="word-info-container">
             <div>
                 <div class="word">
                     <p id="word" style="text-align: left; margin: 0;">Prediction</p>
-                    <input type="text" id="input">
+                    <input type="text" id="input" placeholder="enter one letter or full prediction" >
                 </div>
                 <div class="buttons">
                     <button id="submitButton">Submit</button>
@@ -72,7 +63,7 @@
             </div>
             <div class="info">
                 <p id="Score" style="text-align: left; margin: 0;">Score</p>
-                <input type="text" id="score" value="0" disabled>
+                <input type="text" id="score" value="0" disabled placeholder="Score">
                 <div class="lives">
                     <p id="lives">Lives</p>
                     <div class="hearts">
