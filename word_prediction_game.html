@@ -7,38 +7,82 @@
 <body>
     <div class="container">
         <h1>Word Prediction Game</h1>
+        <div class="card-container">
+            <div class="S">
+                <div class="front">
+                   <img src="Letters/S.svg">
+                </div>
+                <div class="back">
+                  <h2>Arka Yüz</h2>
+                </div>
+            </div>
+            <div class="T">
+                <div class="front">
+                   <img src="Letters/T.svg">
+                </div>
+                <div class="back">
+                  <h2>Arka Yüz</h2>
+                </div>
+            </div>
+            <div class="O">
+                <div class="front">
+                   <img src="Letters/O.svg">
+                </div>
+                <div class="back">
+                  <h2>Arka Yüz</h2>
+                </div>
+            </div>
+            <div class="C">
+                <div class="front">
+                   <img src="Letters/C.svg">
+                </div>
+                <div class="back">
+                  <h2>Arka Yüz</h2>
+                </div>
+            </div>
+            <div class="K">
+                <div class="front">
+                   <img src="Letters/K.svg">
+                </div>
+                <div class="back">
+                  <h2>Arka Yüz</h2>
+                </div>
+            </div>
+        </div>
+            
         <div class="letters">
-            <div class="box"><img id="image_s" src="Letters/S.svg"></div>
-            <div class="box"><img id="image_t" src="Letters/T.svg"></div>
-            <div class="box"><img id="image_o" src="Letters/O.svg"></div>
-            <div class="box"><img id="image_c" src="Letters/C.svg"></div>
-            <div class="box"><img id="image_k" src="Letters/K.svg"></div>
+            
+            <div class="box" id="boxs"><img id="image_s" src="Letters/S.svg"></div>
+            <div class="box" id="boxt"><img id="image_t" src="Letters/T.svg"></div>
+            <div class="box" id="boxo"><img id="image_o" src="Letters/O.svg"></div>
+            <div class="box" id="boxc"><img id="image_c" src="Letters/C.svg"></div>
+            <div class="box" id="boxk"><img id="image_k" src="Letters/K.svg"></div>
         </div>
         <div class="word-info-container">
             <div>
                 <div class="word">
-                    <p id="word">Prediction:</p>
-                    <input type="text" id="word" oninput="predictWord()">
+                    <p id="word" style="text-align: left; margin: 0;">Prediction</p>
+                    <input type="text" id="input">
                 </div>
                 <div class="buttons">
-                    <button class="submit">Submit</button>
-                    <button class="resetButton" onclick="reset()">Reset the Game</button>
+                    <button id="submitButton">Submit</button>
+                    <button id="resetButton">Reset the Game</button>
                 </div>
                 
             </div>
             <div class="info">
-                <p id="Score">Score:</p>
+                <p id="Score" style="text-align: left; margin: 0;">Score</p>
+                <input type="text" id="score" value="0" disabled>
                 <div class="lives">
                     <p id="lives">Lives</p>
                     <div class="hearts">
-                        <img src="heart.svg" height="20px" width="20px">
-                        <img src="heart.svg" height="20px" width="20px">
-                        <img src="heart.svg" height="20px" width="20px">
+                        <img src="heart.svg" height="20px" width="20px" id="heart1">
+                        <img src="heart.svg" height="20px" width="20px" id="heart2">
+                        <img src="heart.svg" height="20px" width="20px" id="heart3">
                     </div>
                 </div>
             </div>
         </div>
-        
     </div>
     <script src="game.js"></script>
 </html>
