@@ -4,12 +4,22 @@
     color: #8f0b13;
   }
 
+  a {
+    text-decoration: none;
+    color: #8f0b13;
+    border-radius: 10px;
+    border: 1px solid #8f0b13;
+    padding: 0.5rem 1rem;
+    background-color: #dda200;
+  }
+
   body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    min-width: 100vw;
     margin: 0;
     background-color: #fffbf0;
     text-align: center;
@@ -18,6 +28,7 @@
   .container {
     background-color: #efdfc5;
     padding: 20px;
+    width: 50%;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
   }

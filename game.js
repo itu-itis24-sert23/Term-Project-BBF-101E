@@ -67,6 +67,7 @@ resetButton.addEventListener('click', startGame);
 submitButton.addEventListener('click', function() {
     input = document.getElementById('input');
     value = input.value.toUpperCase();
+    input.value = '';
     if (value === 'STOCK' || knownLetters.length === 5) {
         handleLetter('s');
         handleLetter('t');
@@ -81,9 +82,14 @@ submitButton.addEventListener('click', function() {
         score += 20;
         handleLetter(value);
         updateScore(score);
-    } else if(!knownLetters.includes(value)) {
+    } else if(!knownLetters.includes(value) && value.length === 1) {
         document.getElementById('heart'+lives).classList.add('hidden');
         lives--;
+    } else {
+        lives = 0;
+        document.getElementById('heart'+1).classList.add('hidden');
+        document.getElementById('heart'+2).classList.add('hidden');
+        document.getElementById('heart'+3).classList.add('hidden');
     }
     if (knownLetters.length === 5) {
         endGame(true);
