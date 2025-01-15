@@ -8,7 +8,7 @@
    version="1.1"
    id="svg1"
    inkscape:version="1.4 (86a8ad7, 2024-10-11)"
-   sodipodi:docname="S.svg"
+   sodipodi:docname="T.svg"
    inkscape:export-filename="C.svg"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
@@ -27,8 +27,8 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="8.1336326"
-     inkscape:cx="23.482742"
-     inkscape:cy="34.36349"
+     inkscape:cx="23.482743"
+     inkscape:cy="39.65018"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
      inkscape:window-x="-8"
@@ -51,19 +51,13 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-98.616939,-135.1716)">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:25.4px;font-family:'Agency FB';-inkscape-font-specification:'Agency FB Condensed';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke-width:0.264583"
-       x="98.133247"
-       y="154.58127"
+    <path
+       d="m 106.3684,136.69709 h -3.00136 v 17.88418 h -1.72393 v -17.88418 h -3.026171 v -1.52549 h 7.751461 z"
        id="text8"
-       inkscape:export-filename="S.svg"
+       style="font-stretch:condensed;font-size:25.4px;font-family:'Agency FB';-inkscape-font-specification:'Agency FB Condensed';stroke-width:0.264583"
+       aria-label="T"
+       inkscape:export-filename="T.svg"
        inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96"><tspan
-         sodipodi:role="line"
-         id="tspan8"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:25.4px;font-family:'Agency FB';-inkscape-font-specification:'Agency FB Condensed';stroke-width:0.264583"
-         x="98.133247"
-         y="154.58127">T</tspan></text>
+       inkscape:export-ydpi="96" />
   </g>
 </svg>

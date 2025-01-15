@@ -7,63 +7,17 @@
    viewBox="0 0 7.6398439 19.409668"
    version="1.1"
    id="svg1"
-   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
-   sodipodi:docname="S.svg"
-   inkscape:export-filename="C.svg"
-   inkscape:export-xdpi="96"
-   inkscape:export-ydpi="96"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview1"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="mm"
-     inkscape:zoom="8.1336326"
-     inkscape:cx="23.482742"
-     inkscape:cy="34.36349"
-     inkscape:window-width="1920"
-     inkscape:window-height="1009"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="layer1">
-    <inkscape:page
-       x="0"
-       y="0"
-       width="7.6398439"
-       height="19.409668"
-       id="page1"
-       margin="0"
-       bleed="0" />
-  </sodipodi:namedview>
   <defs
      id="defs1" />
   <g
-     inkscape:label="Katman 1"
-     inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-99.609126,-135.1716)">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:25.4px;font-family:'Agency FB';-inkscape-font-specification:'Agency FB Condensed';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke-width:0.264583"
-       x="98.133247"
-       y="154.58127"
+    <path
+       d="m 107.24897,153.20461 q 0,0.60771 -0.38447,0.99219 -0.37207,0.38447 -0.97979,0.38447 h -4.88652 q -0.60772,0 -1.004591,-0.38447 -0.384473,-0.38448 -0.384473,-0.99219 v -4.92373 h 1.723924 v 4.7749 h 4.19199 v -4.62607 l -5.35781,-6.47403 q -0.558104,-0.66972 -0.558104,-1.47588 v -3.93154 q 0,-0.60771 0.384473,-0.99219 0.396871,-0.38447 1.004591,-0.38447 h 4.88652 q 0.60772,0 0.97979,0.38447 0.38447,0.38448 0.38447,0.99219 v 4.51445 h -1.72393 v -4.36562 h -4.19199 v 4.09277 l 5.38262,6.47403 q 0.5333,0.64492 0.5333,1.45107 z"
        id="text8"
-       inkscape:export-filename="K.svg"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96"><tspan
-         sodipodi:role="line"
-         id="tspan8"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:25.4px;font-family:'Agency FB';-inkscape-font-specification:'Agency FB Condensed';stroke-width:0.264583"
-         x="98.133247"
-         y="154.58127">S</tspan></text>
+       style="font-stretch:condensed;font-size:25.4px;font-family:'Agency FB';-inkscape-font-specification:'Agency FB Condensed';stroke-width:0.264583"
+       aria-label="S" />
   </g>
 </svg>
