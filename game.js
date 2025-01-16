@@ -55,20 +55,21 @@ function updateScore(score) {
 }
 
 function endGame(won) {
-    if (won) {
+    if (won && submitButton.disabled === false) {
         alert('You won!');
-    } else {
+    } else if(submitButton.disabled === false) {
         alert('You lost!');
     }
     submitButton.disabled = true;
 }
 
-resetButton.addEventListener('click', startGame);
-submitButton.addEventListener('click', function() {
+function game() {
     input = document.getElementById('input');
     value = input.value.toUpperCase();
     input.value = '';
-    if (value === 'STOCK' || knownLetters.length === 5) {
+    if (value === '') {
+        return;
+    } else if (value === 'STOCK' || knownLetters.length === 5) {
         handleLetter('s');
         handleLetter('t');
         handleLetter('o');
@@ -85,6 +86,8 @@ submitButton.addEventListener('click', function() {
     } else if(!knownLetters.includes(value) && value.length === 1) {
         document.getElementById('heart'+lives).classList.add('hidden');
         lives--;
+    } else if(knownLetters.includes(value)) {
+        return;
     } else {
         lives = 0;
         document.getElementById('heart'+1).classList.add('hidden');
@@ -97,80 +100,14 @@ submitButton.addEventListener('click', function() {
         endGame(false);
     }
     resetButton.classList.remove('hidden');
+}
+
+addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        game();
+    }
 });
-// function startGame() {
-//     score = 0;
-//     lives = 3;
-//     resetButton.classList.add('hidden');
-//     letter_s.classList.add('hidden')
-//     letter_t.classList.add('hidden')
-//     letter_o.classList.add('hidden')
-//     letter_c.classList.add('hidden')
-//     letter_k.classList.add('hidden')
-//     heart1.classList.remove('hidden')
-//     heart2.classList.remove('hidden')
-//     heart3.classList.remove('hidden')
-//     box_s.classList.remove('showText');
-//     box_t.classList.remove('showText');
-//     box_o.classList.remove('showText');
-//     box_c.classList.remove('showText');
-//     box_k.classList.remove('showText');
-//     scoreDisplay.value = score;
-// }
+resetButton.addEventListener('click', startGame);
+submitButton.addEventListener('click', game);
 
-// function endGame(won) {
-//     if (won) {
-//         alert('You won!');
-//     } else {
-//         alert('You lost!');
-//     }
-//     lives = 3;
-// }
-
-// resetButton.addEventListener('click', startGame);
-// submitButton.addEventListener('click', function() {
-//     const input = document.getElementById('input');
-//     const value = input.value;
-//     console.log(value);
-//     if (Letters.includes(value) && !knownLetters.includes(value) && value.length === 1) {
-//         knownLetters.push(value);
-//         score += 20;
-//         document.getElementById('image_' + value).classList.remove('hidden');
-//         document.getElementById('box' + value).classList.add('showText');
-//     } else if (value === 'stock' || knownLetters.length === 5) {
-//         letter_s.classList.remove('hidden');
-//         letter_t.classList.remove('hidden');
-//         letter_o.classList.remove('hidden');
-//         letter_c.classList.remove('hidden');
-//         letter_k.classList.remove('hidden');
-//         score = 100;
-//     } else if (value.length > 1) {
-//         lives = 0;
-//     } else {
-//         document.getElementById('heart'+lives).classList.add('hidden');
-//         lives--;
-//     }
-//     if (lives === 0) {
-//         endGame(false);
-//     } else if (score === 100) {
-//         endGame(true);
-//     }
-//     scoreDisplay.value = score;
-//     resetButton.classList.remove('hidden');
-// });
-// document.querySelector('.C').addEventListener('click', function () {
-//     this.classList.toggle('flipped');
-// });
-// document.querySelector('.K').addEventListener('click', function () {
-//     this.classList.toggle('flipped');
-// });
-// document.querySelector('.O').addEventListener('click', function () {
-//     this.classList.toggle('flipped');
-// });
-// document.querySelector('.T').addEventListener('click', function () {
-//     this.classList.toggle('flipped');
-// });
-// document.querySelector('.S').addEventListener('click', function () {
-//     this.classList.toggle('flipped');
-// });
 startGame();
