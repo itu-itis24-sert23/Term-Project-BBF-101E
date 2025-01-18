@@ -51,7 +51,7 @@ function handleLetter(value) {
 }
 
 function updateScore(score) {
-    scoreDisplay.value = score;
+    scoreDisplay.innerText = "Score: " + score;
 }
 
 function endGame(won) {
