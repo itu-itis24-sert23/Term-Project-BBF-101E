@@ -13,7 +13,6 @@ body {
 .container {
   background-color: #efdfc5;
   min-width: 40vw;
-  padding-bottom: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
   display: flex;
@@ -49,19 +48,25 @@ a {
 
 h1 {
   font-size: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.1rem;
   color: #8f0b13;
 }
 
 .profile-card {
+  width: 40vw;
   padding: 30px;
-  max-width: 500px;
-  margin: auto;
+  padding-bottom: 0;
   text-align: center;
 }
 
+.profile-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 20%;
+}
+
 .subtitle {
-  color: #888;
+  color: #330909;
   margin: 10px 0;
 }
 
@@ -71,8 +76,13 @@ h1 {
   margin: 20px 0;
 }
 
-.stats div {
+.stats h3 {
   text-align: center;
+}
+
+.stats div {
+  text-align: left;
+  width: 50%;
 }
 
 .card-container {
@@ -158,6 +168,7 @@ h1 {
   align-items: top;
   gap: 2rem;
   margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .word {
@@ -178,7 +189,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   margin-top: 1rem;
-  gap: 8px;
+  gap: 4px;
 }
 
 .lives {
@@ -186,6 +197,7 @@ h1 {
   margin-top: 2rem;
   border: 1px solid #001524;
   border-radius: 5px;
+  height: 60%;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -221,6 +233,21 @@ h1 {
   color: white;
   padding: 0.5rem 1rem;
   width: 130px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#loadButton {
+  background-color: #8f0b13;
+  color: white;
+  padding: 0.5rem 1rem;
+  width: auto;
   border: none;
   border-radius: 5px;
   cursor: pointer;
