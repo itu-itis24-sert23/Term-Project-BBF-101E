@@ -67,6 +67,9 @@ function game() {
     input = document.getElementById('input');
     value = input.value.toUpperCase();
     input.value = '';
+    if (lives === 0) {
+        return;
+    }
     if (value === '') {
         return;
     } else if (value === 'STOCK' || knownLetters.length === 5) {
