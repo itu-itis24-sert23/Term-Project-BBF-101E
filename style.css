@@ -1,3 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0;
+  background-color: #fffbf0;
+  text-align: center;
+}
+
+.container {
+  background-color: #efdfc5;
+  min-width: 40vw;
+  padding-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+nav {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #8f0b13;
+  margin: 1rem;
+}
+
+.selected {
+  text-decoration: underline;
+}
+
+.unselected {
+  color: #3a2b02
+}
+
 h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -24,70 +73,6 @@ h1 {
 
 .stats div {
   text-align: center;
-}
-
-
-nav {
-  border-bottom: 1px solid #fff;
-  padding-bottom: 1rem;
-  margin-top: 1rem;
-  width: 100%;
-}
-
-.content {
-  display: flex;
-  flex-direction: row;
-}
-
-.left {
-  width: 30%;
-  background-color: white;
-}
-
-.right {
-  width: 70%;
-}
-
-a {
-  text-decoration: none;
-  color: #8f0b13;
-  margin: 1rem;
-}
-
-.selected {
-  text-decoration: underline;
-}
-
-.unselected {
-  color: #3a2b02
-}
-
-body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  min-width: 100vw;
-  margin: 0;
-  background-color: #fffbf0;
-  text-align: center;
-}
-
-.container {
-  background-color: #efdfc5;
-  min-width: 700px;
-  padding-bottom: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
 }
 
 .card-container {
@@ -249,15 +234,3 @@ body {
 .hidden {
   display: none;
 }
-
-.showText {
-  width: 100px;
-  height: 100px;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid white;
-}
-
-
