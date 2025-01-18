@@ -19,6 +19,7 @@ function startGame() {
     score = 0;
     lives = 3;
     knownLetters = [];
+    document.getElementById('input').disabled = false;
     if (letter_s.classList.contains('flipped')) {
         letter_s.classList.toggle('flipped')
     }
@@ -60,6 +61,7 @@ function endGame(won) {
     } else if(submitButton.disabled === false) {
         alert('You lost!');
     }
+    document.getElementById('input').disabled = true;
     submitButton.disabled = true;
 }
 
